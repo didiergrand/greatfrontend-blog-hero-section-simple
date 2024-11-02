@@ -8,10 +8,9 @@ const Hero = () => {
         background: 'linear-gradient(176deg, #F9FAFB 0.94%, #EDF0F3 316.54%)'
       }}
     >
-      <div className="max-w-[1220px] h-full mx-auto">
-        <section className="lg:grid lg:gap-8 lg:grid-cols-12 h-full flex flex-col">
+        <section className="max-w-[1280px] mx-auto px-4 lg:px-8 grid grid-col-4 md:grid-col-6 lg:grid-cols-12 gap-12 md:gap-8 py-[120px]">
           {/* Left Content */}
-          <div className="lg:col-span-5 lg:flex lg:flex-col lg:justify-center lg:mt-8 lg:mt-0">
+          <div className="col-span-4 md:col-span-6 lg:col-span-5 flex flex-col justify-center gap-4 md:gap-6">
             <h1 className="text-3xl sm:text-6xl lg:text-6xl font-[600] tracking-tight text-gray-900 ">
               Well crafted abstract images
             </h1>
@@ -29,7 +28,7 @@ const Hero = () => {
           </div>
           
           {/* Right Image */}
-          <figure className="relative lg:col-span-7 flex-1 flex items-center justify-center">
+          <figure className="col-span-4 md:col-span-6 lg:col-span-7">
             <Image
               src="/img/prism.png"
               alt="Hero Image"
@@ -41,7 +40,6 @@ const Hero = () => {
             />
           </figure>
         </section>
-      </div>
     </header>
   );
 };
